@@ -85,7 +85,8 @@ if (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()->isDevelopme
     #$GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = '28674';
 }
 
-if ((string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() === 'Development/Fabien') {
+$applicationContext = (string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
+if ($applicationContext === 'Development/Fabien') {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'fabien@ecodev.ch';
     $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'fabien@ecodev.ch';
 
@@ -94,7 +95,7 @@ if ((string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() === 
     $GLOBALS['TYPO3_CONF_VARS']['GFX']["im_path_lzw"] = '/usr/local/bin/';
     $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_version_5'] = 'gm';
 
-} elseif ((string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() === 'Development/Fiacre') {
+} elseif ($applicationContext === 'Development/Fiacre') {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'fiacre@ecodev.ch';
     $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'fiacre@ecodev.ch';
 
@@ -103,7 +104,7 @@ if ((string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() === 
     $GLOBALS['TYPO3_CONF_VARS']['GFX']["im_path_lzw"] = '/usr/local/bin/';
     $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_version_5'] = 'gm';
 
-} elseif ((string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() === 'Development/Samuel') {
+} elseif ($applicationContext === 'Development/Samuel') {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'samuel@ecodev.ch';
     $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'samuel@ecodev.ch';
 
@@ -112,7 +113,7 @@ if ((string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() === 
     $GLOBALS['TYPO3_CONF_VARS']['GFX']["im_path_lzw"] = '/usr/local/bin/';
     $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_version_5'] = 'gm';
 
-} elseif ((string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() === 'Development/Marc') {
+} elseif ($applicationContext === 'Development/Marc') {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'marc@ecodev.ch';
     $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'marc@ecodev.ch';
 
