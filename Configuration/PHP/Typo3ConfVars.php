@@ -58,7 +58,7 @@ $GLOBALS['TYPO3_CONF_VARS']['BE']['folderCreateMask'] = '0775';
 // company support details
 $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'typo3@ecodev.ch';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyProvider'] = 'Ecodev Sàrl';
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyURL'] = 'http://www.ecodev.ch/';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyURL'] = 'https://ecodev.ch/';
 
 // graphics settings
 $GLOBALS['TYPO3_CONF_VARS']['GFX']["im"] = '1';
