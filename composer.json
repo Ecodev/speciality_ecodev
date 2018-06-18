@@ -1,7 +1,7 @@
 {
-	"name": "ecodev/speciality-ecodev",
-	"type": "typo3-cms-extension",
-	"description": "TYPO3 extension to ship common configuration specific to Ecodev",
-	"homepage": "https://github.com/Ecodev/speciality_ecodev",
-	"license": ["GPL-2.0+"]
+    "name": "ecodev/speciality-ecodev",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 extension to ship common configuration specific to Ecodev",
+    "homepage": "https://github.com/Ecodev/speciality_ecodev",
+    "license": ["GPL-2.0+"]
 }
