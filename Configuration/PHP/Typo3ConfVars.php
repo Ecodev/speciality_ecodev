@@ -54,6 +54,6 @@ if ($applicationContext === 'Development/Fabien') {
     $GLOBALS['TYPO3_CONF_VARS']['GFX']["processor_path_lzw"] = '/usr/local/bin/';
     $GLOBALS['TYPO3_CONF_VARS']['GFX']['processor'] = 'ImageMagick';
 } elseif ($applicationContext === 'Development/Marc') {
-    $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'marc@ecodev.ch';
-    $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'marc@ecodev.ch';
+    $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'rolli@ecodev.ch';
+    $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'rolli@ecodev.ch';
 }
