@@ -56,4 +56,7 @@ if ($applicationContext === 'Development/Fabien') {
 } elseif ($applicationContext === 'Development/Marc') {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'rolli@ecodev.ch';
     $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'rolli@ecodev.ch';
+} elseif ($applicationContext === 'Development/Ddev') {
+    $GLOBALS['TYPO3_CONF_VARS']['GFX']["processor_path"] = '/usr/bin/';
+    $GLOBALS['TYPO3_CONF_VARS']['GFX']["processor_path_lzw"] = '/usr/bin/';
 }
