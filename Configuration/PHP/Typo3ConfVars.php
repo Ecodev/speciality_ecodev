@@ -27,7 +27,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyURL'] = 'https://ecode
 $GLOBALS['TYPO3_CONF_VARS']['GFX']["processor_path"] = '/usr/share/php/bin/';
 $GLOBALS['TYPO3_CONF_VARS']['GFX']["processor_path_lzw"] = '/usr/share/php/bin/';
 $GLOBALS['TYPO3_CONF_VARS']['GFX']['TTFdpi'] = '96';
-$GLOBALS['TYPO3_CONF_VARS']['GFX']['processor'] = 'GraphicsMagick';
+$GLOBALS['TYPO3_CONF_VARS']['GFX']['processor'] = 'ImageMagick';
 
 #curl and filepath helpers
 $GLOBALS['TYPO3_CONF_VARS']['BE']['unzip_path'] = '/usr/bin/';
@@ -52,7 +52,6 @@ if ($applicationContext === 'Development/Fabien') {
 
     $GLOBALS['TYPO3_CONF_VARS']['GFX']["processor_path"] = '/usr/local/bin/';
     $GLOBALS['TYPO3_CONF_VARS']['GFX']["processor_path_lzw"] = '/usr/local/bin/';
-    $GLOBALS['TYPO3_CONF_VARS']['GFX']['processor'] = 'ImageMagick';
 } elseif ($applicationContext === 'Development/Marc') {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'rolli@ecodev.ch';
     $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'rolli@ecodev.ch';
