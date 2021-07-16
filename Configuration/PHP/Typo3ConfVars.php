@@ -41,7 +41,7 @@ if (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()->isDevelopme
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = '*';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = '1';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = '1';
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = '0';
+    #$GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = '0';
     #$GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = '28674';
 }
 
