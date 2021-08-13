@@ -1,4 +1,7 @@
 <?php
+
+use TYPO3\CMS\Core\Core\Environment;
+
 if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
@@ -35,7 +38,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['binPath'] = '/usr/local/bin,/usr/bin';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['curlUse'] = '1';
 
 // Add configuration for Development Context
-if (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()->isDevelopment()) {
+if (Environment::getContext()->isDevelopment()) {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = true;
     $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = true;
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = '*';
@@ -45,7 +48,7 @@ if (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()->isDevelopme
     #$GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = '28674';
 }
 
-$applicationContext = (string)\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
+$applicationContext = (string)Environment::getContext();
 if ($applicationContext === 'Development/Fabien') {
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'fabien@ecodev.ch';
     $GLOBALS['TYPO3_CONF_VARS']['MAIL']['development_redirect_to'] = 'fabien@ecodev.ch';
